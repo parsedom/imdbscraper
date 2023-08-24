@@ -57,6 +57,7 @@ class MoviescraperSpider(scrapy.Spider):
                 Stars_newlist.append(i)       
 
         yield {
+            'Url' : response.url,
             'Title' : Title,
             'Rating' : rating_score ,
             'summary' : summary ,
